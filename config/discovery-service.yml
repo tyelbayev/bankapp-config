@@ -1,0 +1,24 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: discovery-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bankdb
+    username: bankuser
+    password: bankpass
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      schema: discovery_schema
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: discovery_schema
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
