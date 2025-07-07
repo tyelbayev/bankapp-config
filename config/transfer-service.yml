@@ -17,7 +17,7 @@ spring:
       hibernate:
         default_schema: transfer_schema
 server:
-  port: 8090
+  port: 8092
 eureka:
   client:
     service-url:

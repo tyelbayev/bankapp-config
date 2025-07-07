@@ -17,7 +17,7 @@ spring:
       hibernate:
         default_schema: notifications_schema
 server:
-  port: 8089
+  port: 8090
 eureka:
   client:
     service-url:
