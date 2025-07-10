@@ -16,6 +16,19 @@ spring:
     properties:
       hibernate:
         default_schema: cash_schema
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak-client-credentials:
+            provider: keycloak
+            client-id: cash-service
+            client-secret: u8ANCW8BcqwJvGZMlYTfATVfpF8UZXwI
+            authorization-grant-type: client_credentials
+            scope: openid
+        provider:
+          keycloak:
+            token-uri: http://localhost:8189/realms/bankapp/protocol/openid-connect/token
 server:
   port: 8084
 eureka:

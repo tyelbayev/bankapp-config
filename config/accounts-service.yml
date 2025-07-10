@@ -31,10 +31,6 @@ spring:
         provider:
           keycloak:
             token-uri: http://localhost:8189/realms/bankapp/protocol/openid-connect/token
-      resourceserver:
-        jwt:
-          jwk-set-uri: http://localhost:8189/realms/bankapp/protocol/openid-connect/certs
-
 eureka:
   client:
     service-url:

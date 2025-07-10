@@ -16,6 +16,20 @@ spring:
     properties:
       hibernate:
         default_schema: exchange_generator_schema
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak-client-credentials:
+            provider: keycloak
+            client-id: exchange-generator-service
+            client-secret: FDQZ1BAQqxtw1Pw1caf2RCWRW6z1YeOh
+            authorization-grant-type: client_credentials
+            scope: openid
+        provider:
+          keycloak:
+            token-uri: http://localhost:8189/realms/bankapp/protocol/openid-connect/token
+
 server:
   port: 8086
 eureka:
