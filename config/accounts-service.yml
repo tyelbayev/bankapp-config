@@ -18,6 +18,11 @@ spring:
     properties:
       hibernate:
         default_schema: accounts_schema
+
+  sql:
+    init:
+      mode: always
+
   security:
     oauth2:
       client:
