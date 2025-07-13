@@ -48,7 +48,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8189/realms/bankapp
+          issuer-uri: http://localhost:8089/realms/bankapp
 
 server:
   port: 8088
