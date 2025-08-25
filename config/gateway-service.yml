@@ -43,7 +43,7 @@ spring:
           uri: lb://notifications-service
           predicates:
             - Path=/notifications/**
-      default-filters:          #last changes START
+      default-filters:
         - TokenRelay
       globalcors:
         cors-configurations:
@@ -51,14 +51,14 @@ spring:
             allowedOrigins: "http://localhost:8080,http://localhost:8088"
             allowedMethods: "*"
             allowedHeaders: "*"
-            allowCredentials: true      #last changes END
+            allowCredentials: true
 
   security:
     oauth2:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8089/realms/bankapp
-      client:                                                   #last changes START
+      client:
         registration:
           keycloak:
             client-id: gateway
@@ -68,7 +68,7 @@ spring:
             scope: openid,profile
       provider:
         keycloak:
-          issuer-uri: http://localhost:8089/realms/bankapp    #last changes END
+          issuer-uri: http://localhost:8089/realms/bankapp
 
 server:
   port: 8088
