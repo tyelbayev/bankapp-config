@@ -16,6 +16,12 @@ spring:
     properties:
       hibernate:
         default_schema: exchange_schema
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8089/realms/bankapp
+
 server:
   port: 8087
 eureka:
