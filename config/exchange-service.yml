@@ -16,11 +16,11 @@ spring:
     properties:
       hibernate:
         default_schema: exchange_schema
-  security:
+  security:                                               #last changes START
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8089/realms/bankapp
+          issuer-uri: http://localhost:8089/realms/bankapp    #last changes END
 
 server:
   port: 8087
