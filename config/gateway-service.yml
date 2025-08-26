@@ -60,9 +60,9 @@ spring:
 
   security:
     oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8089/realms/bankapp
+#      resourceserver:
+#        jwt:
+#          issuer-uri: http://localhost:8089/realms/bankapp
       client:                                                   #last changes START
         registration:
           keycloak:
