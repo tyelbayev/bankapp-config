@@ -9,10 +9,10 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: front-ui
-          uri: lb://front-ui
-          predicates:
-            - Path=/, /main/**, /signup/**, /css/**, /js/**, /images/**
+#        - id: front-ui
+#          uri: lb://front-ui
+#          predicates:
+#            - Path=/, /main/**, /signup/**, /css/**, /js/**, /images/**
 
         - id: exchange-service
           uri: lb://exchange-service
