@@ -6,6 +6,7 @@ spring:
     name: front-ui
 
   thymeleaf:
+    enabled: true
     cache: false
     prefix: classpath:/templates/
     suffix: .html
