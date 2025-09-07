@@ -40,3 +40,8 @@ spring:
 gateway:
   base-url: http://localhost:8088
 
+logging:
+  level:
+    org.springframework.web.reactive.function.client: DEBUG
+    reactor.netty.http.client: DEBUG
+    reactor.netty.transport: DEBUG
