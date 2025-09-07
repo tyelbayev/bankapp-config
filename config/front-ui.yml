@@ -22,6 +22,12 @@ spring:
             scope: openid
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+          accounts-s2s:
+            provider: keycloak
+            client-id: front-ui-s2s
+            client-secret: LRATVPSf2ibpxLacTSEQeciChTtB84c9
+            authorization-grant-type: client_credentials
+            scope: openid
         provider:
           keycloak:
             issuer-uri: http://localhost:8089/realms/bankapp
